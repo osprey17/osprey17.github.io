@@ -1,26 +1,71 @@
 <!DOCTYPE html>
-<html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").fadeIn();
-    $("#div2").fadeIn("slow");
-    $("#div3").fadeIn(3000);
-  });
-});
-</script>
+  <meta charset="UTF-8">
+  <title>Circle Progress Bar | Webdevtrick.com</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<p>Momo fadeIn() with different parameters.</p>
+  <section id="circleBar">
 
-<button>Click to fade in boxes</button><br><br>
+    <h1>Circle Progress Bar</h1>
+    <p>These Circle Progress Bars Created Using JQuery's Special Library</p>
 
-<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
-<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
-<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">						
+        <div class="round"
+          data-value="0.87"
+          data-size="200"
+          data-thickness="6">
+          <strong></strong>
+          <span><i class="fa fa-html5" aria-hidden="true"></i> HTML Skill</span>
+        </div>
+      </div>
+      <div class="col-md-3">					
+        <div class="round"
+          data-value="0.74"
+          data-size="200"
+          data-thickness="6">
+          <strong></strong>
+          <span><i class="fa fa-css3" aria-hidden="true"></i> CSS Skill</span>
+        </div>
+      </div>
+      <div class="col-md-3">			
+        <div class="round"
+          data-value="0.65"
+          data-size="200"
+          data-thickness="6">
+          <strong></strong>
+          <span><i class="fa fa-jsfiddle" aria-hidden="true"></i> JavaScript Skill</span>
+        </div>
+      </div>
+      <div class="col-md-3">			
+        <div class="round"
+          data-value="0.95"
+          data-size="200"
+          data-thickness="6">
+          <strong></strong>
+          <span><i class="fa fa-laptop" aria-hidden="true"></i> Bootstrap Skill</span>
+        </div>
+      </div>
+    </div>	
+  </div>
+  <button class="btn" onClick="Circlle('.round');">Refresh</button>
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
+<script  src="function.js"></script>
 
 </body>
 </html>
